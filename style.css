@@ -1,0 +1,473 @@
+/*-----------------------------------------------------------------------------------
+
+ Theme Name: Phototime
+ Theme URI: http://phototime.com
+ Description: The Multi-Purpose Onepage Template
+ Author: Ashiqur Rahman
+ Author URI: http://themeforest.net/user/ui-themez
+ Version: 1.0
+
+
+-----------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+
+ == Table Of Content
+    01.Typography
+    02 Header area
+        2.1 Navigation area
+        2.2 welcome text
+        2.3 Social icon
+	03 Simple Photo
+	04 Design
+	05 Community
+	06 Subscribe
+	07 Download
+	08 Footer
+	09 Responsive
+ 
+
+---------------------------------------------------------------- */
+/* ----------------------------------------------------------------
+   1. Typography
+-----------------------------------------------------------------*/
+
+
+@font-face {
+	font-family: "gothamRoundedBold";
+	src: url(fonts/gothamrounded-bold.woff) format('woff');
+}
+@font-face {
+	font-family: "gothamRoundedBook";
+	src: url('fonts/gothamrounded-book.woff') format('woff');
+}
+body, p, span {
+    font-family: "gothamRoundedBook";
+    font-size: 14px;
+    line-height: 1.3em;
+    color:#555;
+}
+p{
+    font-size: 13px;
+    line-height: 1.9em;
+    color: #666;
+}
+p b {
+    color: #555;
+}
+h1, h2, h3, h4, h5, h6, b {
+    font-family: "gothamRoundedBold";
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+}
+.container {
+    width: 1170px;
+    margin: 60px auto;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------
+header area started
+--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.header-area {
+    background: url(img/header-bg.jpg) no-repeat;
+    background-position: top center;
+    background-size: cover;
+    color:#fff;
+    text-align: center;
+    padding: 2% 0;
+    margin-bottom: 60px;
+}
+
+.header-area .navigation{
+    margin-bottom: 80px;
+}
+
+.header-area .welcome-text{
+    margin-bottom: 60px;
+}
+
+.header-area .social-icon{}
+
+/* navigation started */
+.header-area .navigation {
+    font-family:"gothamRoundedBook" ;
+}
+
+.header-area .navigation ul {
+    list-style: none;
+}
+
+.header-area .navigation ul li {
+    display: inline-block;
+}
+.header-area .navigation ul li a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family:"gothamRoundedBook" ;
+    padding: 15px 30px 5px;
+    border-bottom: 1px solid transparent;
+    transition: .3s;
+}
+.header-area .navigation img {
+    width: 40px;
+    transition: .3s;
+
+}
+
+.header-area .navigation img:hover {
+    transform: scale(1.1) rotate(360deg);
+}
+.header-area .navigation li:first-child a {
+    border-bottom: 1px solid yellowgreen;
+}
+.header-area .navigation ul li a:hover:not(.navigation ul li:nth-child(3) a, .navigation li:first-child a) {
+    border-bottom: 1px solid yellowgreen;
+    color:yellowgreen;
+}
+
+/* navigation ended */
+
+/* welcome text started */
+
+.welcome-text {
+    margin-top: 300px;
+}
+.welcome-text h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+.welcome-text h5 {
+    color:#fff;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1.3px    
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #16A086;
+    color: #fff;
+    font-family:"gothamRoundedBook";
+    text-decoration:none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: .2s;
+        
+}
+.btn:hover {
+    background: #0E5649;
+    font-family: "gothamRoundedBold";
+}
+/* welcome text ended */
+
+/* social icon started */
+.social-icon {
+    margin-top: 250px;
+}
+.social-icon ul {}
+.social-icon ul li {
+    display: inline-block;
+    margin-right: 15px;     
+}
+.social-icon ul li i{
+    color:#fff;
+    font-size: 30px;
+}
+.social-icon ul li i:hover {
+    color:yellowgreen;
+}
+/* social icon ended */
+
+/* simple photo started */
+.simple-photo{
+   display: flex;
+    align-items: center;
+    /*! justify-content: space-around; */
+    /*! padding: 5%; */
+
+   width: 1170px;
+   margin:60px auto;
+   flex-wrap: wrap;
+    
+}
+.simple-photo .left{
+    width: 45%;
+    
+}
+.simple-photo .right{
+    width: 55%;
+    float: right;
+    background: url(img/hand.png) no-repeat;
+    background-position: left top;
+    min-height: 400px;
+}
+
+.left h3{
+    color: #16a085;
+    letter-spacing: 1.5px;
+    font-size: 25px;
+    line-height: 1.5em;
+    font-weight: normal;
+    font-family: 'GothamRoundedBook';
+    margin-bottom: 30px;
+}
+.simple-photo .left p{
+    width: 75%;
+    letter-spacing: 1px;
+}
+.simple-photo .left a {
+    margin-top: 25px;
+}
+
+
+/* simple photo ended */
+
+/* design started */
+.design {
+    width: 1170px;
+    margin:60px auto;  
+    display: flex;
+    justify-content: space-around;
+    height: 412px;
+	flex-wrap: wrap;
+}
+.design .left{
+    width: 48%;
+    background: url(img/mobile.png) no-repeat;
+    background-position: left top;
+    min-height: 200px;
+    /*! margin-right: 18%; */
+}
+
+.design .right h3{
+    color: #16a085;
+    letter-spacing: 1.5px;
+    font-size: 25px;
+    line-height: 1.5em;
+    font-weight: normal;
+    font-family: 'GothamRoundedBook';
+    margin-bottom: 30px;
+}
+.design .right p{
+    letter-spacing: 1px;
+    /*! width: 75%; */
+}
+.design .right a {
+    margin-top: 55px;
+}
+.design .right{
+    width: 50%;
+}
+.design .right a + span{
+    margin-top: 20px
+}
+.design span {
+    display: block;
+    margin-bottom: 5px;
+}
+.design span i {
+    margin-right: 10px
+    
+}
+/* design area ended */
+
+/* community start  */
+
+.community {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+	flex-wrap:wrap;
+}
+.community .item{
+    text-align: center;
+	width: 32%;
+}
+.community .item h3{
+    color: #444;
+}
+.community .item p{
+    width: 40%;
+    margin: auto;
+    line-height: 1.3em;
+}
+/* community ended */
+
+.subscribe {
+    padding: 26%;
+    background: url(img/subscribe-bg.jpg) no-repeat top center;
+    background-size: cover;
+    text-align: center;
+    
+}
+.subscribe h2{
+    color:#fff;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+.subscribe form{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.subscribe input{
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    background: #fff;
+    color:#000;
+    padding: 20px 10px;
+    outline: none;
+}
+.subscribe button {
+	background: #16A086;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	font-size: 16px;
+	padding: 19px 16px;
+	color: #fff;
+}
+
+.subscribe button:hover{
+    background: #11483D;
+}
+
+
+
+
+
+.download {
+    padding: 5%;
+    text-align: center;
+}
+.download h2{
+    font-size: 40px;
+    font-weight: normal;
+    color:#555;
+    text-transform: uppercase;
+    font-family: 'GothamRoundedBook';
+}
+.download p{
+    font-size: 15px;
+    width: 40%;
+    margin:30px auto;
+    font-family: sans-serif;
+    
+}
+.download button {
+    margin-right: 10px;
+    border:none;
+}
+.download button i{
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+
+@media all and (max-width:768px ){
+    .header-area .navigation ul li a{
+        padding: 10px 15px;
+		font-size: 12px;
+    }
+	.welcome-text {
+		margin: 0;
+	}
+	.welcome-text h1 {
+		font-size: 25px;
+	}
+	.welcome-text h5{
+		font-size: 12px;
+	}
+	.btn{
+		padding: 10px;
+		font-size: 12px;
+	}
+	.social-icon{
+		margin: 0;
+	}
+	.simple-photo{
+		width:90%;
+		margin: auto;
+		flex-direction: column;
+	}
+	.simple-photo .left{
+		width: 100%;
+	}
+	.simple-photo .right{
+		width: 100%;
+		background-size: cover;
+		
+	}
+	
+	.design{
+		width: 90%;
+		flex-direction: column;
+		height: auto;
+	}
+	.design .left {
+		width: 100%;
+		padding-bottom: 200px;
+	}
+	.design .right{
+		width: 100%;
+	}
+	.design .right a{
+		margin-top: 20px;
+		
+	}
+	.community{
+	padding: 5% 0;
+	}
+	.community .item{
+		width: 30%;
+	}
+	.community .item p{
+		width: 80%;
+		text-align: center;
+	}
+	.community .item h3{
+		margin: 0;
+	}
+	.subscribe {
+		padding: 5%;
+	}
+	.subscribe h2{
+		font-size: 25px;
+		font-weight: normal;
+		
+	}
+	
+	.download h2{
+		font-size: 30px;
+	}
+	.download p{
+		width: 90%;
+		margin: auto;
+		
+	}
+	.download button {
+		padding: 5px;
+	}
+	.download button{
+		margin-top: 60px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}
